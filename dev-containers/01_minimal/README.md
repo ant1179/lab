@@ -7,10 +7,10 @@ In order to use, you need to have Dev Pods installed
 ## Build the dev container
 
 ```shell
-devpod-ctl build .
+devpod-cli build .
 ```
 ## Connect to the dev container
 
 ```shell
-devpod-ctl ssh
+devpod-cli ssh
 ```
