@@ -8,7 +8,7 @@ This is a simple repository to set up a sample devcontainer containing a dev env
 
 ## Launching the scripts
 
-The repository contains a couple of conveniance scripts.
+The repository contains a couple of scripts.
 
 ### Starting the devcontainer
 
