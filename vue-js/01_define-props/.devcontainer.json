@@ -1,0 +1,20 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers-community/npm-features/prettier:1" : {},
+		"ghcr.io/devcontainers-community/npm-features/typescript:1" : {},
+		"ghcr.io/devcontainers-extra/features/vue-cli:2": {},
+		"ghcr.io/jungaretti/features/ripgrep:1" : {}
+	},
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "zsh",
+		"terminal.integrated.profile.linux": {
+			"zsh": {
+				"path": "/bin/zsh"
+			}
+		},
+		"terminal.integrated.fontFamily": "MesloLGS NF"
+	}
+}
