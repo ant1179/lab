@@ -1,12 +1,20 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers-community/npm-features/prettier:1" : {},
-		"ghcr.io/devcontainers-community/npm-features/typescript:1" : {},
-		"ghcr.io/devcontainers-extra/features/vue-cli:2": {},
-		"ghcr.io/jungaretti/features/ripgrep:1" : {}
+		"ghcr.io/devcontainers-extra/features/npm-package:1": {
+			"package": "prettier"
+		},
+		"ghcr.io/devcontainers-extra/features/npm-package:1" : {
+			"package": "typescript"
+		},
+		"ghcr.io/georgofenbeck/features/lazygit-linuxbinary:1" : {},
+		"ghcr.io/devcontainers-extra/features/zsh-plugins:0" : {
+			"omzPlugins": [
+				"https://github.com/marlonrichert/zsh-autocomplete.git", "https://github.com/zsh-users/zsh-syntax-highlighting.git", "https://github.com/zsh-users/zsh-autosuggestions.git", "https://github.com/zdharma-continuum/fast-syntax-highlighting.git", "https://github.com/marlonrichert/zsh-autocomplete.git"
+			]
+		}
 	},
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "zsh",
@@ -15,6 +23,7 @@
 				"path": "/bin/zsh"
 			}
 		},
-		"terminal.integrated.fontFamily": "MesloLGS NF"
-	}
+		"terminal.integrated.fontFamily": "Fira Code Mono Nerd Font Mono",
+	},
+	"postCreateCommand": "./install-dependencies.sh"
 }
