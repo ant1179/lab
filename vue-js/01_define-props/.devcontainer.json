@@ -17,7 +17,7 @@
 	},
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "zsh",
-		"terminal.integrated.profile.linux": {
+		"terminal.integrated.profiles.linux": {
 			"zsh": {
 				"path": "/bin/zsh"
 			}
