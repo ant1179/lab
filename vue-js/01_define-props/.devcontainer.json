@@ -13,20 +13,14 @@
 		"ghcr.io/devcontainers-extra/features/npm-package:1" : {
 			"package": "typescript"
 		},
-		"ghcr.io/georgofenbeck/features/lazygit-linuxbinary:1" : {},
-		"ghcr.io/devcontainers-extra/features/zsh-plugins:0" : {
-			"omzPlugins": [
-				"https://github.com/marlonrichert/zsh-autocomplete.git", "https://github.com/zsh-users/zsh-syntax-highlighting.git", "https://github.com/zsh-users/zsh-autosuggestions.git", "https://github.com/zdharma-continuum/fast-syntax-highlighting.git", "https://github.com/marlonrichert/zsh-autocomplete.git"
-			]
-		}
+		"ghcr.io/georgofenbeck/features/lazygit-linuxbinary:1" : {}
 	},
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "zsh",
 		"terminal.integrated.profile.linux": {
 			"zsh": {
-				"path": "zsh"
+				"path": "/bin/zsh"
 			}
-		},
-		"terminal.integrated.fontFamily": "Fira Code Mono Nerd Font Mono",
+		}
 	}
 }
