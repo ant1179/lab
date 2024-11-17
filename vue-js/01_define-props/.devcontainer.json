@@ -13,6 +13,12 @@
 		"ghcr.io/devcontainers-extra/features/npm-package:1" : {
 			"package": "typescript"
 		},
+		"ghcr.io/devcontainers-extra/features/homebrew-package:1": {
+			"package" : "btop"
+		},
+		"ghcr.io/devcontainers-extra/features/homebrew-package:1": {
+			"package" : "jless"
+		},
 		"ghcr.io/georgofenbeck/features/lazygit-linuxbinary:1" : {}
 	},
 	"settings": {
@@ -22,6 +28,6 @@
 				"path": "/bin/zsh"
 			}
 		},
-		"terminal.integrated.fontFamily" : "Roboto Mono for Powerline"
+		"terminal.integrated.fontFamily" : "ProFont"
 	}
 }
