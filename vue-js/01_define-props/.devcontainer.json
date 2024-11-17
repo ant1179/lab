@@ -14,9 +14,6 @@
 			"package": "typescript"
 		},
 		"ghcr.io/devcontainers-extra/features/homebrew-package:1": {
-			"package" : "btop"
-		},
-		"ghcr.io/devcontainers-extra/features/homebrew-package:1": {
 			"package" : "jless"
 		},
 		"ghcr.io/georgofenbeck/features/lazygit-linuxbinary:1" : {}
@@ -27,7 +24,6 @@
 			"zsh": {
 				"path": "/bin/zsh"
 			}
-		},
-		"terminal.integrated.fontFamily" : "ProFont"
+		}
 	}
 }
