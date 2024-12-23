@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-ant-2
+    method: fromcode
+  name: nginx-ant-2
+spec:
+  containers:
+    - image: nginx
+      name: nginx-ant-2
