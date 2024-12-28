@@ -23,3 +23,7 @@ spec:
           volumeMounts:
             - mountPath: /app/data
               name: mealie-data
+      volumes:
+        - name: mealie-data
+          persistentVolumeClaim:
+            claimName: mealie-data
