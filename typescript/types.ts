@@ -46,3 +46,8 @@ let myRole: Role = Role.READ_ONLY;
 if ((myRole as Role) === Role.ADMIN) {
   console.log(`This is a test on an enum`);
 }
+
+// void
+function sayHello(): void {
+  console.log("hello");
+}
