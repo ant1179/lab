@@ -24,3 +24,8 @@ notSure = `any string`;
 let myObj: object;
 myObj = {};
 let myOtherObj: {}; // valid syntax
+
+// array
+// first way to define an array
+let list: number[] = [1, 2, 3];
+let anyList: any[] = [1, true, {}];
