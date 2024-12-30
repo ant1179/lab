@@ -12,5 +12,8 @@ let genderMale: boolean = true;
 let bold: boolean = false;
 
 // any
+// hint: use any if possible in only the following cases
+//   - dynamic content or content provided by a user
+//   - content being converted from JS to TS
 let notSure: any = 4;
 notSure = `any string`;
