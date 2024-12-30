@@ -42,7 +42,7 @@ enum Role {
   READ_ONLY,
   READ_WRITE,
 }
-let user = { role: (Role = Role.ADMIN) };
-if ((user.role = Role.ADMIN)) {
-  echo(`This is a test on an enum`);
+let user = { role: (string = Role.ADMIN) };
+if (user.role === Role.ADMIN) {
+  console.log(`This is a test on an enum`);
 }
