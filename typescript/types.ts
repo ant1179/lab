@@ -51,3 +51,7 @@ if ((myRole as Role) === Role.ADMIN) {
 function sayHello(): void {
   console.log("hello");
 }
+
+// null & undefined (both are subtypes of all other types)
+// when using `strictNullChecks` compilation option, null & undefined can only be assigned to any or their own type
+let myNumber: null = null;
