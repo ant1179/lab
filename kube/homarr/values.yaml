@@ -1,3 +1,5 @@
+## -- overriding the default value of replicCount set to 1
+replicaCount: 2
 persistence:
   - name: homarr-config
     # -- Enable homarr-config persistent storage
