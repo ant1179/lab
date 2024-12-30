@@ -29,3 +29,5 @@ let myOtherObj: {}; // valid syntax
 // first way to define an array
 let list: number[] = [1, 2, 3];
 let anyList: any[] = [1, true, {}];
+// second way to define an array
+let anotherList: Array<number> = [1, 2, 3];
