@@ -17,3 +17,6 @@ let bold: boolean = false;
 //   - content being converted from JS to TS
 let notSure: any = 4;
 notSure = `any string`;
+
+// object
+// anything that is not number, string, boolean, bigint, symbol, null or undefined
