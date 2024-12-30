@@ -35,3 +35,14 @@ let anotherList: Array<number> = [1, 2, 3];
 // tuples
 let x: [string, number];
 x = ["hello", 44];
+
+// enums
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  READ_WRITE,
+}
+let user = { role: (Role = Role.ADMIN) };
+if ((user.role = Role.ADMIN)) {
+  echo(`This is a test on an enum`);
+}
