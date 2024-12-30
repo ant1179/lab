@@ -20,3 +20,7 @@ notSure = `any string`;
 
 // object
 // anything that is not number, string, boolean, bigint, symbol, null or undefined
+// this type is not very used
+let myObj: object;
+myObj = {};
+let myOtherObj: {}; // valid syntax
