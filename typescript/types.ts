@@ -7,6 +7,10 @@ firstname = `James`;
 let age: number = 45;
 let realage: number = 45.3;
 
-//boolean
-let gender_male: boolean = true;
+// boolean
+let genderMale: boolean = true;
 let bold: boolean = false;
+
+// any
+let notSure: any = 4;
+notSure = `any string`;
