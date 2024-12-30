@@ -55,3 +55,9 @@ function sayHello(): void {
 // null & undefined (both are subtypes of all other types)
 // when using `strictNullChecks` compilation option, null & undefined can only be assigned to any or their own type
 let myNumber: null = null;
+
+// never
+// this type is rarly used. Used for example as return type of functions that only throw exceptions
+function error(message: string): never {
+  throw new Error(message);
+}
