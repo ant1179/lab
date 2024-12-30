@@ -57,7 +57,7 @@ function sayHello(): void {
 let myNumber: null = null;
 
 // never
-// this type is rarly used. Used for example as return type of functions that only throw exceptions
+// this type is rarely used. Used for example as return type of functions that only throw exceptions
 function error(message: string): never {
   throw new Error(message);
 }
