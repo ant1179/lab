@@ -4,6 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: prometheus-stack
     app.kubernetes.io/name: grafana
+  name: grafana-custom-service
   namespace: monitoring
 spec:
   ports:
