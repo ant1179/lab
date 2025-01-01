@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app.kubernetes.io/instance: prometheus-stack
-    app.kubernetes.io/name: grafana
-  name: grafana-custom-service
+    app: grafana
+  name: grafana-loadbalancer
   namespace: monitoring
 spec:
   ports:
