@@ -63,7 +63,7 @@ async def create_item(item: ItemCreate, db: Session = Depends(get_db)):
     return db_item
 
 
-@app.post("/items/{item_id}", response_model=ItemResponse)
+@app.get("/items/{item_id}", response_model=ItemResponse)
 async def read_item(item_id: int, db: Session = Depends(get_db)):
     db_item = db.query(Item).filter(Item.id == item_id).first()
     if db_item is None:
