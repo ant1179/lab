@@ -9,8 +9,9 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Database setup
-DATABASE_URL = &quot;sqlite:///./test.db&quot;
-engine = create_engine(DATABASE_URL);
+DATABASE_URL = "sqlite: // /./test.db"
+engine = create_engine(DATABASE_URL)
+
 
 @app.get("/")
 async def root():
