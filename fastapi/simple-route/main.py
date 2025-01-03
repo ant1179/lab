@@ -27,6 +27,24 @@ class Item(Base):
 # Create tables
 Base.metadata.create_all(bind=engine)
 
+# Dependency to get the database session
+
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+# Pydantic model for response data
+
+
+class ItemResponse(BaseModel):
+    id: int
+    name: str
+    description: str
+
 
 @app.get("/")
 async def root():
