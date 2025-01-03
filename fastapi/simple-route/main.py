@@ -37,6 +37,12 @@ def get_db():
     finally:
         db.close()
 
+# Pydantic model for request data
+
+
+class ItemCreate(BaseModel):
+    name: str
+    description: str
 # Pydantic model for response data
 
 
@@ -54,3 +60,8 @@ async def read_item(item_id: int, db: Session = Depends(get_db)):
     if db_item is None:
         raise HTTPException(status_code=404, detail="Item not found")
     return db_item
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=8000)
