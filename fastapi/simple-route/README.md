@@ -22,5 +22,5 @@ Run ```pip3 install -r requirements.txt```
 
 ### Run the application server
 
-Run ```uvicorn main:app --reload```
+Run ```python3 main.py```
 
