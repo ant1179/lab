@@ -24,3 +24,7 @@ Run ```pip3 install -r requirements.txt```
 
 Run ```python3 main.py```
 
+# Next steps
+
+- Dockerize the application
+- Deploy it in Kubernetes
