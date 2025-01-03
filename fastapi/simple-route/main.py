@@ -54,6 +54,15 @@ class ItemResponse(BaseModel):
 # API endpoint to create an item
 
 
+@app.post("/items", response_model=ItemResponse)
+async def create_item(item: ItemCreate, db: Session = Depends(get_db)):
+    db_item = Item(**item.dict())
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+
+
 @app.post("/items/{item_id}", response_model=ItemResponse)
 async def read_item(item_id: int, db: Session = Depends(get_db)):
     db_item = db.query(Item).filter(Item.id == item_id).first()
