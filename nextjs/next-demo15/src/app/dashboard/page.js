@@ -1,7 +1,7 @@
 export default function DashboardPage() {
-  return {
+  return (
     <div className="dashboard-page">
       <p>Hello dashboard page!</p>
     </div>
-  }
+  );
 }
