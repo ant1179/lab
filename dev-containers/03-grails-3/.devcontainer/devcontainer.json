@@ -1,8 +1,8 @@
 {
   "name": "devcontainer-grails-3",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace/vscode",
   "features": {},
   "postCreateCommand": "./.devcontainer/install-software.sh"
 }

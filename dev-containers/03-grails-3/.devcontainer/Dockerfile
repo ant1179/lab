@@ -6,3 +6,10 @@ RUN apt update && \
 
 # tell debian to use bash as default shell
 RUN ln -snf /bin/bash /bin/sh
+
+# Create the workspace directory
+RUN mkdir -p /workspace/vscode
+WORKDIR /workspace/vscode
+
+# Keep the container running
+CMD ["tail", "-f", "/dev/null"]

@@ -1,5 +1,7 @@
 .devpod-internal/
 .DS_Store
+.idea/
+*.code-workspace
 
 # nextjs standard gitignore
 # dependencies
