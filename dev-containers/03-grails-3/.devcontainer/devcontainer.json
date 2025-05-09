@@ -1,0 +1,8 @@
+{
+  "name": "devcontainer-grails-3",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {},
+  "postCreateCommand": "./.devcontainer/install-software.sh"
+}

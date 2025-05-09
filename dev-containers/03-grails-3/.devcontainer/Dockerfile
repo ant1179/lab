@@ -1,0 +1,8 @@
+FROM mcr.microsoft.com/devcontainers/base:debian
+
+# add dependencies
+RUN apt update && \
+  apt install -y software-properties-common apt-transport-https ca-certificates gnupg git tree curl wget bat gpg ripgrep stow cmake tmux fd-find direnv zip unzip
+
+# tell debian to use bash as default shell
+RUN ln -snf /bin/bash /bin/sh
